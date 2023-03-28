@@ -1,0 +1,61 @@
+/* COlORS */
+/* MIXIN */
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 360px;
+    height: 4475px; 
+    left: 0px;
+    top: 0px;
+} */
+/* Header */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 360px;
+  height: auto;
+  padding: 16px;
+  gap: 16px;
+}
+
+.header__container__name {
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 150px;
+  height: 24px;
+  padding: 0px;
+  gap: 8px;
+}
+.header__container__name--title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 12px;
+  line-height: 19px;
+  font-size: 16px;
+  color: #464646;
+}
+
+.header__container__contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__container__contact--name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  color: #464646;
+}
+
+/*# sourceMappingURL=header.css.map */

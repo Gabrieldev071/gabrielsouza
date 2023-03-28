@@ -1,0 +1,3 @@
+O tema é a parte que menos tem aplicação na maioria dos projetos, é usada para separar a parte que dá um novo design para a página. Foi criada para resolver um problema específico do Yahoo! Mail onde o usuário poderia mudar o layout da caixa de email. Define um conjunto de estilos como cores, backgrounds, imagens e até fonte family, mas pensando na possibilidade em que terá mais de uma versão do mesmo site ou aplicação e não na estilização de um único design.
+
+Um exemplo de uso seriam em e-commerces que alteram o layout de acordo com a pessoa que acessa. Sabendo que aquele usuário é um homem e torcedor do palmeiras (por exemplo), a página pode apresentar elementos verdes nas cor do time e dar uma sensação de algo personalizado.

@@ -1,0 +1,32 @@
+/* COlORS */
+
+$color-preto: #464646;
+$color-azul10:  #EAF2FD;
+$background_color-cinza-claro: #E5E5E5;
+
+/* MIXIN */ 
+
+@mixin flex-column-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 360px;
+    height: 4475px; 
+    left: 0px;
+    top: 0px;
+} */

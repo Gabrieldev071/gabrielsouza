@@ -1,0 +1,2 @@
+ módulo é responsável por determinar as partes reutilizáveis, os componentes. 
+ Dentro do módulo componentes como botões, lightbox, alertas, menu de navegação, widgets, estilos de blocos de texto, entre outros.

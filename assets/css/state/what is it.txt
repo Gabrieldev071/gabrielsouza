@@ -1,0 +1,10 @@
+State ou estado em português, como o nome diz determina o estado do elemento. 
+No caso de um elemento que será modificado ou terá alguma alteração, seja ela feita por JavaScript, ou por ser uma marcação daquela página. Temos como exemplos estados:
+
+.is-active
+.is-selected
+.is-visible
+is-hidden
+is-collapsed
+
+Todo estado recebe o prefixo .is- para diferenciar das outras classes, mostrando assim que ela determina um estado modificado daquele elemento.

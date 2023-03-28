@@ -1,0 +1,3 @@
+O layout é onde colocaremos os estilos das estruturas que não se repetem na página como header, footer, sidebar, main e todo resto que não é componente ou estrutura reutilizável.
+
+Utiliza o padrão de nomenclatura l- ou layout-.
