@@ -1,5 +1,16 @@
 /* COlORS */
 /* MIXIN */
+/* Font Awesome  */
+.fa-brands {
+  font-size: 1.5rem;
+  color: #2A7AE4;
+}
+
+.fa-solid {
+  font-size: 1.5rem;
+  color: #2A7AE4;
+}
+
 /* body {
     display: flex;
     flex-direction: column;
@@ -16,9 +27,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: rgb(203, 207, 207);
+  background-color: #E5E5E5;
   width: 360px;
-  height: 294px;
+  height: auto;
   padding: 1rem;
   gap: 1rem;
   flex: none;
@@ -41,12 +52,12 @@
   flex-direction: column;
   align-items: flex-start;
   width: 328px;
-  height: 148px;
+  height: auto;
   gap: 1rem;
 }
 .container__profile__content--title {
   width: 20.5rem;
-  height: 52px;
+  height: auto;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -109,7 +120,7 @@
   padding: 16px;
   gap: 0.625rem;
   width: 360px;
-  height: 350px;
+  height: auto;
   background: #EAF2FD;
   flex: none;
   order: 2;
@@ -120,8 +131,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 360px;
-  height: 350px;
+  width: 328px;
+  height: auto;
   gap: 1rem;
 }
 .container__aboutme__block--title {
@@ -136,12 +147,64 @@
 }
 .container__aboutme__block--paragraph {
   width: 20.5rem;
-  height: 13rem;
+  height: auto;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1rem;
+  color: #464646;
+}
+
+/* SKILSS */
+.container__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  width: 360px;
+  height: auto;
+  background-color: rgba(235, 233, 233, 0.2862745098);
+}
+.container__skills--title {
+  height: 26px;
+  margin: 13px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 26px;
+  align-items: center;
+  color: #464646;
+}
+.container__skills__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 328px;
+  height: 118px;
+}
+.container__skills__group__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 156px;
+  height: 118px;
+  padding: 16px;
+  gap: 8px;
+  background-color: #FFFFFF;
+}
+.container__skills__group__block--text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   color: #464646;
 }
 
