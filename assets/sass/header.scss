@@ -29,7 +29,7 @@
      gap: 8px;
 
      &--title {
-          font-family: 'Raleway';
+          font-family: $font-family-Raleway;
           font-style: normal;
           font-weight: 700;
           font-weight: 12px;
@@ -45,7 +45,7 @@
      flex-wrap: wrap;
 
      &--name {
-          font-family: 'Raleway';
+          font-family: $font-family-Raleway;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;

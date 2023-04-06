@@ -1,33 +1,91 @@
 /* COlORS */
+/* Fonte-Family */
 /* MIXIN */
 /* Font Awesome  */
 .fa-brands {
   font-size: 1.5rem;
-  color: #2A7AE4;
+  color: #2a7ae4;
 }
 
 .fa-solid {
   font-size: 1.5rem;
-  color: #2A7AE4;
+  color: #2a7ae4;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
+/* Buttons */
+.buttonsNobackground {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  gap: 10px;
+  width: 108px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  background-color: #ffffff;
+}
+.buttonsNobackground:hover {
+  background-color: #eaf2fd;
+}
 
-    position: absolute;
-    width: 360px;
-    height: 4475px; 
-    left: 0px;
-    top: 0px;
-} */
+.buttonsBackgroundBlue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  gap: 10px;
+  width: 108px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2a7ae4;
+  border: none;
+}
+.buttonsBackgroundBlue:hover {
+  background-color: #3c7dd2;
+}
+
+/* Text Labels */
+.campo__etiqueta {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a2a2a2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 360px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+}
+
 .container__profile {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   width: 360px;
   height: auto;
   padding: 1rem;
@@ -67,8 +125,8 @@
 }
 .container__profile__content--paragraph {
   width: 328px;
-  height: 48px;
-  font-family: "Raleway";
+  height: auto;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -86,7 +144,7 @@
 .container__profile__content--links a {
   text-decoration: none;
   position: relative;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
@@ -121,7 +179,7 @@
   gap: 0.625rem;
   width: 360px;
   height: auto;
-  background: #EAF2FD;
+  background: #eaf2fd;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -138,7 +196,7 @@
 .container__aboutme__block--title {
   width: 7.81rem;
   height: 1.625rem;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -148,7 +206,7 @@
 .container__aboutme__block--paragraph {
   width: 20.5rem;
   height: auto;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -162,7 +220,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1rem;
   padding-bottom: 16px;
   width: 360px;
   height: auto;
@@ -171,7 +229,7 @@
 .container__skills--title {
   height: 26px;
   margin: 13px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.375rem;
@@ -184,7 +242,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 16px;
+  gap: 1rem;
   width: 328px;
   height: 118px;
 }
@@ -197,7 +255,7 @@
   height: 118px;
   padding: 16px;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .container__skills__group__block--text {
   font-family: "Raleway";
@@ -208,17 +266,156 @@
   color: #464646;
 }
 
-/* &--title {
-    width: 125px;
-    height: 26px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
+/* Academic education */
+.container__training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+  width: 360px;
+  height: auto;
+  background-color: #eaf2fd;
+}
+.container__training--title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #464646;
+}
+.container__training__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1rem;
+}
+.container__training__block__group {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 8px;
+  width: 300px;
+  height: 118px;
+  background-color: #ffffff;
+}
+.container__training__block__group--img {
+  width: 50%;
+  height: 115px;
+  margin: 2px;
+  align-self: center;
+  background-image: url(https://logo.uninassau.digital/img/svg/uninassau.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  border: none;
+}
+.container__training__block__group--imgOne {
+  width: 50%;
+  height: 115px;
+  margin: 2px;
+  align-self: center;
+  background-image: url(data:image/png;base64,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);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  border: none;
+}
+.container__training__block h6 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+.container__training__block p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  width: auto;
+  height: 16px;
+}
 
-    color: $color-preto;
-
-} */
+/* Professional Experience */
+.container__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: auto;
+  padding: 32px;
+  gap: 1rem;
+}
+.container__projects--title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #464646;
+}
+.container__projects__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding: 0px;
+  gap: 64px;
+}
+.container__projects__block__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 300px;
+  height: auto;
+}
+.container__projects__block__group--img {
+  width: 296px;
+  height: 144px;
+}
+.container__projects__block__group__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  gap: 8px;
+}
+.container__projects__block__group__info--title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+.container__projects__block__group__info--paragraph {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #464646;
+}
+.container__projects__block__group__info--buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 300px;
+  height: 40px;
+  gap: 16px;
+}
 
 /*# sourceMappingURL=main.css.map */

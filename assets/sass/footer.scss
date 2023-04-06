@@ -1,0 +1,125 @@
+@import "./base.scss";
+
+/* Contato */
+
+.container__footer {
+  @include flex-column-center;
+  width: 360px;
+  height: auto;
+  background-color: aliceblue;
+
+  &__block {
+    @include flex-column-center;
+    width: 323px;
+    height: auto;
+    gap: 32px;
+    padding: 16px;
+
+    &__group {
+      &__text {
+        @include flex-column-start;
+        padding: 0px;
+        gap: 16px;
+
+        &--title {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 26px;
+          color: $color-preto;
+        }
+
+        &--paragraph {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: $color-preto;
+        }
+
+        &--paragraph2 {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+
+      &__forms {
+        @include flex-column-start;
+
+        height: auto;
+        gap: 32px;
+
+        .formsCampo {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0.5rem;
+          gap: 8px;
+
+          width: 296px;
+          height: 56px;
+
+          border-radius: 4px;
+          background-color: $background_color-branco;
+        }
+
+        button {
+          width: 151px;
+          height: 40px;
+        }
+      }
+    }
+
+    &__contact {
+
+      @include flex-row-center;
+      justify-content: center;
+      width: 100%;
+      padding: 32px;
+      gap: 10px;
+      background-color: $background_color-branco;
+
+      p {
+        font-family: $font-family-Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-preto;
+      }
+    }
+  }
+}
+
+input {
+  font-family: $font-family-Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  color: $color-preto;
+  width: 100%;
+  padding: 1px;
+}
+
+input:focus {
+  border-bottom: 2px solid $color-azul-escuro;
+}
+
+textarea {
+  width: 100%;
+  border: 0;
+  color: red;
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 2px solid $color-azul-escuro;
+}
