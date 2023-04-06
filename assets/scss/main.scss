@@ -1,23 +1,17 @@
-@import "./base.scss";
+
 
 .container__profile {
   @include flex-column-start;
-  background-color: #e5e5e5;
-
   width: 360px;
   height: auto;
-
   padding: 1rem;
   gap: 1rem;
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+  background-color: #e5e5e5;
 
   &__image {
     width: 98px;
     height: 98px;
+    margin: 0 1rem;
 
     &--img {
       width: 98px;
@@ -29,10 +23,10 @@
 
   &__content {
     @include flex-column-start;
-
     width: 328px;
     height: auto;
     gap: 1rem;
+
 
     &--title {
       width: 20.5rem;
