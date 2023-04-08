@@ -5,20 +5,21 @@
 .container__footer {
   @include flex-column-center;
   height: auto;
-  background-color: aliceblue;
+  background-color: $color-azul10;
 
   &__block {
     @include flex-column-center;
     height: auto;
-    gap: 32px;
-    padding: 16px;
+    gap: 2rem;
+    padding: 1rem;
 
     &__group {
       &__text {
         @include flex-column-start;
         flex-wrap: wrap;
         padding: 0px;
-        gap: 16px;
+        gap: 1rem;
+        width: 296px;
 
         &--title {
           font-family: $font-family-Raleway;
@@ -33,7 +34,7 @@
           font-family: $font-family-Raleway;
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 19px;
           color: $color-preto;
         }
@@ -43,7 +44,7 @@
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
-          line-height: 16px;
+          line-height: 1rem;
         }
       }
 
@@ -51,7 +52,7 @@
         @include flex-column-start;
 
         height: auto;
-        gap: 32px;
+        gap: 2rem;
 
         .formsCampo {
           display: flex;
@@ -79,7 +80,7 @@
       @include flex-row-center;
       justify-content: center;
       width: 100%;
-      padding: 32px;
+      padding: 2rem;
       gap: 10px;
       background-color: $background_color-branco;
 
@@ -87,7 +88,7 @@
         font-family: $font-family-Raleway;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
         color: $color-preto;
       }
     }

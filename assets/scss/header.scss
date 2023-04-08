@@ -8,9 +8,9 @@
      justify-content: center;
      flex-direction: column;
      height: auto;
-     width: 100%;
-     padding: 16px;
-     gap: 16px;
+     width: 368.073px;
+     padding: 1rem;
+     gap: 1rem;
      background-color: $background_color-cinza-claro;
 }
 
@@ -25,7 +25,7 @@
      height: 24px;
           
      padding: 0px;
-     gap: 8px;
+     gap: 0.5rem;
 
      &--title {
           font-family: $font-family-Raleway;
@@ -33,7 +33,7 @@
           font-weight: 700;
           font-weight: 12px;
           line-height: 19px;
-          font-size: 16px;
+          font-size: 1rem;
           color: $color-preto;
      }
 }
@@ -47,7 +47,7 @@
           font-family: $font-family-Raleway;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 12px;
           color: $color-preto;
           

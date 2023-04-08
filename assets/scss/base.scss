@@ -2,12 +2,12 @@
 
 $color-preto: #464646;
 $color-cinza: #a2a2a2;
-
 $color-azul-escuro: #2a7ae4;
-
 $color-azul10: #eaf2fd;
+
 $background_color-cinza-claro: #ebe9e949;
 $background_color-branco: #ffffff;
+
 
 /* Fonte-Family */
 
@@ -93,6 +93,7 @@ $font-family-Raleway: "Raleway", sans-serif;
   &:hover {
     background-color: desaturate($color: $color-azul-escuro, $amount: 15%);
   }
+
 }
 
 /* Text Labels */
@@ -115,8 +116,3 @@ $font-family-Raleway: "Raleway", sans-serif;
     height: 100vh; 
 
 } 
-
-
-main {
-  padding: 0 0.1rem;
-}
