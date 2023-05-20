@@ -23,9 +23,26 @@
           font-weight: 700;
           font-weight: 0.75rem; // 12px
           line-height: 1.188rem; //19px
-          font-size: 1rem;
+          font-size: 1.5rem;
           color: $color-preto;
+
+          &::after {
+               content: "";
+               width: 11px;
+               height: 20px;
+               border-bottom: solid 2px $color-preto;
+               animation: underline_animation  0.65s step-end infinite;
+               display: inline-block;
+          }
+
+          @keyframes underline_animation {
+               0% { opacity: 0; }
+               50% { opacity: 0.5; }
+               100% { opacity: 1; }
+          }
      }
+
+
 }
 
 .header__container__nav {
@@ -42,7 +59,7 @@
                font-family: $font-family-Raleway;
                font-style: normal;
                font-weight: 500;
-               font-size: 1rem;
+               font-size: 1.5rem;
                line-height: 1.188rem;
        
                &::after {
