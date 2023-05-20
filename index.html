@@ -24,11 +24,21 @@
 </head>
 
 <body>
-  <header class="header__container">
+  <header class="header__container baseContainer">
     <div class="header__container__name">
       <img src="./assets/img/auto_awesome_black_24dp 1.svg" alt="3 estrelas de 4 pontas" />
       <h3 class="header__container__name--title">Gabriel Souza</h3>
     </div>
+    <nav class="header__container__nav">
+      <ul class="header__container__nav--ul">
+        <li><a href="#sobreMim">Sobre mim</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="mailto:contato_gabriel_albuquerque@hotmail.com">contato_gabriel_albuquerque@hotmail.com</a></li>
+      </ul>
+    </nav>
     <div class="header__container__contact">
       <h3 class="header__container__contact--name">
         contato_gabriel_albuquerque@hotmail.com
@@ -36,16 +46,16 @@
     </div>
   </header>
   <main>
-    <section class="container__profile">
-      <div class="container__profile__image">
-        <img class="container__profile__image--img" src="" alt="" />
-      </div>
+    <section class="container__profile baseContainer">
       <div class="container__profile__content">
         <h1 class="container__profile__content--title">
-          Olá, meu nome é Gabriel Souza e sou desenvolvedor Front-End.
+          Olá, seja bem vindo(a) ao meu Portfólio pessoal, me chamo Gabriel Souza e sou desenvolvedor Front-End.
         </h1>
         <p class="container__profile__content--paragraph">
-          Sou estudante de Análise e Desenvolvimento de Sistemas e atualmente participo do projeto Oracle ONE na Alura. O objetivo principal deste portfólio é apresentar um pouco mais sobre mim e minhas habilidades como desenvolvedor Front-End, sendo uma extensão do meu currículo. Fiquem à vontade para realizar testes e explorar o conteúdo disponível! 
+          Sou estudante de Análise e Desenvolvimento de Sistemas e atualmente participo do projeto Oracle ONE na Alura.
+          O objetivo principal deste portfólio é apresentar um pouco mais sobre mim e minhas habilidades como
+          desenvolvedor Front-End, sendo uma extensão do meu currículo. Fiquem à vontade para realizar testes e explorar
+          o conteúdo disponível!
         </p>
         <div>
           <ul class="container__profile__content--links">
@@ -69,152 +79,176 @@
           </ul>
         </div>
       </div>
+      <div class="container__profile__image">
+        <img class="container__profile__image--img" src="" alt="" />
+      </div>
     </section>
     <!-- Sobre mim -->
-    <section class="container__aboutme">
+    <section class="container__aboutme baseContainer" id="sobreMim">
       <div class="container__aboutme__block">
         <h1 class="container__aboutme__block--title">Sobre mim</h1>
         <p class="container__aboutme__block--paragraph">
-          Nasci em Campina Grande - PB e atualmente trabalho na área de atendimento ao cliente na empresa Necxt Orbitall. Desde criança, sempre tive afinidade e paixão pela tecnologia, e meu sonho sempre foi seguir uma carreira nesse campo. Atualmente, estou em processo de transição de carreira e iniciei meu curso superior em Análise e Desenvolvimento de Sistemas na Uninassau, com o objetivo de me tornar um desenvolvedor full stack. Iniciei minha jornada como dev front-end e estou empenhado em alcançar esse objetivo.
+          Nasci em Campina Grande - PB e atualmente trabalho na área de atendimento ao cliente na empresa Necxt
+          Orbitall. Desde criança, sempre tive afinidade e paixão pela tecnologia, e meu sonho sempre foi seguir uma
+          carreira nesse campo. No momento estou em processo de transição de carreira e iniciei meu curso superior em
+          Análise e Desenvolvimento de Sistemas na Uninassau, com o objetivo de me tornar um desenvolvedor full stack,
+          iniciei minha jornada como dev front-end e estou empenhado em alcançar esse objetivo.
         </p>
       </div>
     </section>
+
     <!-- Skilss -->
-    <sectio class="container__skills">
+    <section class="container__skills baseContainer" id="skills">
       <h1 class="container__skills--title">Skills</h1>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+      <ul class="container__skills__group">
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-html5"></i>
           <p class="container__skills__group__block--text">HTML5</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-square-js"></i>
           <p class="container__skills__group__block--text">JavaScript</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-css3-alt"></i>
           <p class="container__skills__group__block--text">CSS</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-sass"></i>
           <p class="container__skills__group__block--text">SASS</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-node"></i>
           <p class="container__skills__group__block--text">Node JS</p>
-        </div>
-
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-react"></i>
           <p class="container__skills__group__block--text">React</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-git-alt"></i>
           <p class="container__skills__group__block--text">Git</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-brands fa-github"></i>
           <p class="container__skills__group__block--text">GiHub</p>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <!-- Hobbies -->
-      <h1 class="container__skills--title">Hobbies</h1>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+      <h1 class="container__skills--title" id="hobbies">Hobbies</h1>
+
+      <ul class="container__skills__group">
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-volleyball"></i>
           <p class="container__skills__group__block--text">Vôlei</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-sharp fa-solid fa-futbol"></i>
           <p class="container__skills__group__block--text">Futebol</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-tent"></i>
           <p class="container__skills__group__block--text">Camping</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-gamepad"></i>
           <p class="container__skills__group__block--text">Jogar</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-book"></i>
           <p class="container__skills__group__block--text">Leitura</p>
-        </div>
-
-        <div class="container__skills__group__block">
+          </div>
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-camera"></i>
           <p class="container__skills__group__block--text">Tirar fotos</p>
-        </div>
-      </div>
-      <div class="container__skills__group">
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-tv"></i>
           <p class="container__skills__group__block--text">Assistir Animes</p>
-        </div>
-        <div class="container__skills__group__block">
+        </li>
+        <li class="container__skills__group__block">
           <i class="fa-solid fa-music"></i>
           <p class="container__skills__group__block--text">Ouvir Música</p>
-        </div>
-      </div>
-    </sectio>
+        </li>
+      </ul>
+
+    </section>
 
     <!-- Formação Acadêmica -->
-    <section class="container__training">
+    <section class="container__training baseContainer" id="formacao">
       <h1 class="container__training--title">Formação Acadêmica</h1>
-      <div class="container__training__block">
-        <div class="container__training__block__group">
-          <div class="container__training__block__group--img"></div>
-        </div>
-        <h6>Análise e Desenvolvimento de Sistemas</h6>
-        <p class="container__projects__block__group__info--paragraph" >Em andamento - Maurício de Nassau</p>
-        <div class="container__training__block__group">
-          <div class="container__training__block__group--imgOne"></div>
-        </div>
-        <h6>Programa ONE - Oracle Next Education</h6>
-        <p class="container__projects__block__group__info--paragraph">2023 - Alura & Oracle</p>
-        <!--           <div class="container__training__block__group">
-            <div class="container__training__block__group--img">
 
-            </div>
+      <ul class="container__training__block">
+        <li class="container__training__block__group">
+          <div class="container__training__block__group--img">
+            <img src="./assets/img/uninassau.svg" alt="Logo do Programa One Roacle Next Education">
           </div>
           <h6>Análise e Desenvolvimento de Sistemas</h6>
-          <p>2023</p> -->
-      </div>
+          <p class="container__projects__block__group--paragraph">Em andamento - Maurício de Nassau</p>
+        </li>
+
+        <li class="container__training__block__group">
+          <div class="container__training__block__group--img">
+            <img src="./assets/img/ONE-Next-Education.png" alt="Logo do Programa One Roacle Next Education">
+          </div>
+          <h6>Programa ONE - Oracle Next Education</h6>
+          <p class="container__projects__block__group--paragraph"> <a
+              href="https://cursos.alura.com.br/emprega-one/profile/gabrielsouza071" target="_blank"
+              rel="noopener noreferrer"> 2023 - Alura & Oracle</a></p>
+        </li>
+
+        <li class="container__training__block__group">
+          <div class="container__training__block__group--img">
+            <img src="./assets/img/business-agility.svg" alt="Logo do Programa One Roacle Next Education">
+          </div>
+          <h6>Business Agility T4 - ONE</h6>
+          <p class="container__projects__block__group--paragraph"> <a
+              href="https://cursos.alura.com.br/user/gabrielsouza071/degree-business-agility-turma4-one-519812/certificate"
+              target="_blank" rel="noopener noreferrer">2023 - Alura & Oracle</a></p>
+        </li>
+        <li class="container__training__block__group">
+          <div class="container__training__block__group--img">
+            <img src="./assets/img/desenvolvimento-pessoal.svg" alt="Logo do Programa One Roacle Next Education">
+          </div>
+          <h6>Desenvolvimento Pessoal T4 - ONE</h6>
+          <p class="container__projects__block__group--paragraph"> <a
+              href="https://cursos.alura.com.br/user/gabrielsouza071/degree-desenvolvimento-pessoal-turma4-one-477527/certificate"
+              target="_blank" rel="noopener noreferrer">2023 - Alura & Oracle</a></p>
+        </li>
+      </ul>
     </section>
 
     <!-- Experiência Profissional -->
 
-    <section class="container__projects">
+    <section class="container__projects baseContainer" id="projetos">
       <h1 class="container__projects--title">Experiência Profissional</h1>
       <div class="container__projects__block">
-        <div class="container__projects__block__group">
-          <img src="./assets/img/demo-decodificador.png" class="container__projects__block__group--img"
-            alt="Imagem sobre um decodificador de texto" />
-          <div class="container__projects__block__group__info">
-            <h6 class="container__projects__block__group__info--title">
+
+        <div class="container__projects__block--img">
+
+        </div>
+
+        <div class="container__projects__block__content">
+          <div class="container__projects__block__content__info">
+            <h6 class="container__projects__block__content__info--title">
               Decodificador de texto
             </h6>
-            <p class="container__projects__block__group__info--paragraph">
+            <p class="container__projects__block__content__info--paragraph">
               Challenge Alura Codificador e Descodificador de texto
             </p>
-            <div class="container__projects__block__group__info--buttons">
-              <a href="https://github.com/Gabrieldev071/alura-challenge1-decodificador-descodificador" target="_blank" rel="noopener noreferrer"><button class="buttonsNobackground">Repositório</button></a>
-             <a href="https://gabrieldev071.github.io/alura-challenge1-decodificador-descodificador/" target="_blank" rel="noopener noreferrer"><button class="buttonsBackgroundBlue">Ver Demo</button></a>
-            </div>
+          </div>
+
+          <div class="container__projects__block__content__info--buttons">
+            <a href="https://github.com/Gabrieldev071/alura-challenge1-decodificador-descodificador" target="_blank"
+              rel="noopener noreferrer"><button class="buttonsNobackground">Repositório</button></a>
+            <a href="https://gabrieldev071.github.io/alura-challenge1-decodificador-descodificador/" target="_blank"
+              rel="noopener noreferrer"><button class="buttonsBackgroundBlue">Ver Demo</button></a>
           </div>
         </div>
-        <!--  <div class="container__projects__block__group">
+      </div>
+      <!--          <div class="container__projects__block__group">
             <img src="./assets/img/Rectangle.svg"
             class="container__projects__block__group--img alt="">
             <div class="container__projects__block__group__info">
@@ -229,59 +263,52 @@
                 <button class="buttonsBackgroundBlue">Ver Demo</button>
               </div>
             </div>
-          </div> -->
+          </div>  -->
       </div>
     </section>
 
     <!--Footer & Contato -->
 
-    <footer class="container__footer">
+    <footer class="container__footer baseContainer">
       <div class="container__footer__block">
 
-        <div class="container__footer__block__group__text">
-          <h1 class="container__footer__block__group__text--title">Contato</h1>
-          <p class="container__footer__block__group__text--paragraph">
-            Quer entrar em contato comigo? Preencha o formulário abaixo e
-            entrarei em contato o mais rápido possível.
-          </p>
-          <p class="container__footer__block__group__text--paragraph2">(ou mande um e-mail diretamente para <span>
-              <a
-                href="mailto:contato_gabriel_albuquerque@hotmail.com">contato_gabriel_albuquerque@hotmail.com</a></span>)
-          </p>
-        </div>
-
+        <img src="./assets/img/chamada-formulario.png" alt="">
 
         <form action="" class="container__footer__block__group__forms" data-formulario="" id="form">
+
+          <div class="container__footer__block__group__text">
+            <h1 class="container__footer__block__group__text--title">Contato</h1>
+            <p class="container__footer__block__group__text--paragraph">
+              Quer entrar em contato comigo? Preencha o formulário abaixo e
+              entrarei em contato o mais rápido possível.
+            </p>
+            <p class="container__footer__block__group__text--paragraph2">(ou mande um e-mail diretamente para <span>
+                <a
+                  href="mailto:contato_gabriel_albuquerque@hotmail.com">contato_gabriel_albuquerque@hotmail.com</a></span>)
+            </p>
+          </div>
+
           <fieldset class="formsCampo">
-            <label class="campo__etiqueta" for="username">Nome</label placeholder>
             <input type="text" name="nome" id="username" class="input__escrita" placeholder="Seu nome"
               autocomplete="off" title="" maxlength="50" required />
-<!--             <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-sharp fa-solid fa-circle-check"></i> -->
             <small class="mensagem--erro"></small>
           </fieldset>
 
           <fieldset class="formsCampo">
-            <label class="campo__etiqueta" for="email">E-mail</label>
-            <input type="email" name="email" id="email" class="input__escrita" placeholder="exemplo@gmail.com" required />
-     <!--        <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-sharp fa-solid fa-circle-check"></i> -->
+            <input type="email" name="email" id="email" class="input__escrita" placeholder="exemplo@gmail.com"
+              required />
             <small class="mensagem--erro"></small>
           </fieldset>
 
           <fieldset class="formsCampo">
-            <label class="campo__etiqueta" id="label
-            __assunto" for="assunto">Assunto</label>
-            <input type="text" name="email" id="assunto" class="input__escrita" 
-            required />
-          <!--   <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-sharp fa-solid fa-circle-check"></i> -->
+           
+            <input type="text" name="text" id="assunto" class="input__escrita" required placeholder="Assunto"/>
             <small class="mensagem--erro"></small>
           </fieldset>
 
-          <fieldset class="formsCampo">
-            <textarea class="campo__etiqueta" for="menagem" placeholder="Mensagem" required ></textarea>
-           <!--  <i class="fa-solid fa-circle-exclamation"></i>
+          <fieldset class="formsCampoArea">
+            <textarea class="campo__etiquetaArea" id="messagem"  placeholder="Mensagem" name="message" autocomplete="off" pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9])$" required=""></textarea>
+            <!--  <i class="fa-solid fa-circle-exclamation"></i>
             <i class="fa-sharp fa-solid fa-circle-check"></i> -->
             <small class="mensagem--erro"></small>
           </fieldset>
@@ -291,7 +318,7 @@
 
       </div>
       <div class="container__footer__block__contact">
-        <p>Desenvolvido por Gabriel Souza 2023</p> 
+        <p>Desenvolvido por Gabriel Souza 2023</p>
       </div>
     </footer>
   </main>

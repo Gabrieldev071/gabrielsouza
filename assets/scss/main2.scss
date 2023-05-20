@@ -1,0 +1,498 @@
+.container__profile {
+  @include flex-row-center;
+  height: auto;
+
+  background-color: #e5e5e5;
+
+  &__image {
+    margin: 0 1rem;
+
+    &--img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid $color-preto;
+      background-image: url("../img/Foto3x4sorrindo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      box-shadow: 1px 1px 3px 0px black;
+    }
+  }
+
+  &__content {
+    @include flex-column-start;
+    padding-right: 2rem;
+    gap: 1.5rem;
+
+    &--title {
+      width: auto;
+      height: auto;
+
+      font-family: "Raleway";
+      font-style: normal;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.5rem;
+
+      color: $color-preto;
+    }
+
+    &--paragraph {
+      width: auto;
+      height: auto;
+
+      font-family: $font-family-Raleway;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.825rem;
+      color: $color-preto;
+    }
+
+    &--links {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      width: auto;
+      height: 1rem;
+      gap: 2rem;
+
+      a {
+        text-decoration: none;
+        position: relative;
+        font-family: $font-family-Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1rem;
+
+        &::after {
+          content: " ";
+          width: 0%;
+          height: 2px;
+          background-color: $color-preto;
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: 0.5s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        &:link {
+          color: $color-preto;
+        }
+
+        &:visited {
+          color: #696969;
+        }
+      }
+    }
+  }
+}
+
+/* Sobre mim */
+
+.container__aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 0.625rem;
+  height: auto;
+  background: $color-azul10;
+
+  &__block {
+    @include flex-column-start;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    gap: 1rem;
+
+    &--title {
+      font-family: $font-family-Raleway;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.625rem;
+
+      color: $color-preto;
+    }
+
+    &--paragraph {
+      height: auto;
+      font-family: $font-family-Raleway;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.825rem;;
+
+      color: $color-preto;
+    }
+  }
+}
+
+/* SKILSS */
+
+.container__skills {
+  @include flex-column-center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: $background_color-cinza-claro;
+
+  &--title {
+    height: 26px;
+    margin: 1rem;
+    font-family: $font-family-Raleway;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.625rem;
+    color: $color-preto;
+  }
+
+  &__group {
+    @include flex-row-center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 174px;
+      height: 170px;
+      padding: 1rem;
+      gap: 8px;
+      background-color: $background_color-branco;
+
+      &--text {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 19px;
+        color: $color-preto;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: $color-azul-escuro;
+        transition: 0.5s;
+
+        &:hover > i,
+        p {
+          transform: scale(1.1);
+          color: #e5e5e5;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+/* Academic education */
+
+.container__training {
+  @include flex-column-center;
+
+  gap: 2rem;
+  width: auto;
+  height: auto;
+  background-color: $color-azul10;
+
+  &--title {
+    font-family: $font-family-Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: $color-preto;
+  }
+
+  &__block {
+    @include flex-row-center;
+    
+    gap: 1rem;
+    flex-wrap: wrap;
+
+
+    &__group {
+      @include flex-column-start;
+      gap: 1rem;
+      padding: 1% 0;
+      width: 368px;
+      height: auto;
+     
+ 
+      &--img {
+        @include flex-row-center;
+        justify-content: center;
+        width: 340px;
+        height: 250px;
+        padding: 6%;
+        
+        background-color: $background_color-branco;
+
+        img {
+          max-width: 90%;
+          max-height: 90%;
+        }
+      }
+
+      h6 {
+        font-family: $font-family-Raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 19px;
+        color: $color-preto;
+      }
+  
+      p {
+        font-family: $font-family-Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        width: auto;
+
+        a {
+          text-decoration: none;
+
+          &:visited {
+            color: #696969;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/* Professional Experience */
+
+.container__projects {
+  @include flex-column-center;
+  height: auto;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: $background_color-cinza-claro;
+
+  &--title {
+    font-family: $font-family-Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    color: $color-preto;
+  }
+
+  &__block {
+    @include flex-row-center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 73vw;
+    gap: 3rem;
+
+    &--img {
+      width: 752px;
+      height: 406px;
+      background: url(../img/demo-decodificador.png);
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.40));
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-clip: content-box;
+      border-radius: 0px;
+      padding: 0px;
+      gap: 1rem;
+    }
+    
+
+    &__content {
+      @include flex-column-start;
+      padding: 0px;
+      gap: 0.5rem;
+      width: 348px;
+      height: 112px;
+
+
+      &__info {
+        @include flex-column-start;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        gap: 1rem;
+
+        &--title {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 19px;
+          color: $color-preto;
+        }
+
+        &--paragraph {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.188rem;
+          color: $color-preto;
+        }
+
+        &--buttons {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          width: 300px;
+          height: 40px;
+          gap: 1rem;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Contato */
+
+/* .container__footer {
+  @include flex-column-center;
+  height: auto;
+  padding: 2rem;
+  background-color: $color-azul10;
+
+  &__block {
+    @include flex-row-center;
+    height: auto;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+
+    &__group {
+      
+      &__text {
+        @include flex-column-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        gap: 1rem;
+        width: 296px;
+
+        &--title {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 26px;
+          color: $color-preto;
+        }
+
+        &--paragraph {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 19px;
+          color: $color-preto;
+        }
+
+        &--paragraph2 {
+          font-family: $font-family-Raleway;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1rem;
+        }
+      }
+
+      &__forms {
+        @include flex-column-start;
+
+        height: auto;
+        gap: 2rem;
+
+        .formsCampo {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0.5rem;
+          gap: 8px;
+
+          width: 296px;
+          height: 56px;
+
+          border-radius: 4px;
+          background-color: $background_color-branco;
+        }
+
+        button {
+          width: 151px;
+          height: 40px;
+        }
+      }
+    }
+
+    &__contact {
+
+      @include flex-row-center;
+      justify-content: center;
+      width: 100%;
+      padding: 2rem;
+      gap: 10px;
+      background-color: $background_color-branco;
+
+      p {
+        font-family: $font-family-Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $color-preto;
+      }
+    }
+  }
+}
+
+input {
+  font-family: $font-family-Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  color: $color-preto;
+  width: 100%;
+  padding: 1px;
+}
+
+input:focus {
+  border-bottom: 2px solid $color-azul-escuro;
+}
+
+textarea {
+  width: 100%;
+  border: 0;
+  color: red;
+} */
+
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 2px solid $color-azul-escuro;
+}
+
+

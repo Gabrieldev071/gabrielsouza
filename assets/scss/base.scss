@@ -6,6 +6,7 @@ $color-azul-escuro: #2a7ae4;
 $color-azul10: #eaf2fd;
 
 $background_color-cinza-claro: #ebe9e949;
+$background_color-preto05: #F5F5F5;
 $background_color-branco: #ffffff;
 
 
@@ -13,7 +14,7 @@ $background_color-branco: #ffffff;
 
 $font-family-Raleway: "Raleway", sans-serif;
 
-/* MIXIN */
+/* MIXINs */
 
 @mixin flex-column-start {
   display: flex;
@@ -31,6 +32,42 @@ $font-family-Raleway: "Raleway", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@mixin flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@mixin flex-row-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin style-title-profile {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.375rem; // 38px
+  text-align: center;
+
+  color: $color-preto;
+}
+
+
+@mixin style-title-sections-desktop {
+  font-family: $font-family-Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem; 
+  line-height: 2.375rem; // 38px
+  text-align: center;
+
+  color: $color-preto;
 }
 
 @mixin font-style-buttons {
@@ -53,12 +90,12 @@ $font-family-Raleway: "Raleway", sans-serif;
 /* Font Awesome  */
 
 .fa-brands {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
   color: $color-azul-escuro;
 }
 .fa-solid {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
   color: $color-azul-escuro;
 }
@@ -96,23 +133,30 @@ $font-family-Raleway: "Raleway", sans-serif;
 
 }
 
+
+.baseContainer {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 /* Text Labels */
 
-.campo__etiqueta {
+/* .campo__etiqueta {
   font-family: $font-family-Raleway;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $color-cinza;
-}
+} */
 
- body {
+/*  body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0px;
     width: 100vw;
     height: 100vh; 
 
-} 
+}  */

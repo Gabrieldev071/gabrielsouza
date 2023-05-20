@@ -3,55 +3,75 @@
 /* Header */
 
 .header__container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     height: auto;
-     width: 368.073px;
-     padding: 1rem;
+     @include flex-row-space-between;
+     height: 8rem;
      gap: 1rem;
      background-color: $background_color-cinza-claro;
 }
 
 .header__container__name {
 
-     display: flex;
-     align-items: center;
-     flex: none;
-     order: 0;
-     flex-grow: 0;
-     width: 150px;
-     height: 24px;
-          
-     padding: 0px;
+     @include flex-row-center;
+
+     width: auto;
+     height: 1.5rem; // 24px      
      gap: 0.5rem;
 
      &--title {
           font-family: $font-family-Raleway;
           font-style: normal;
           font-weight: 700;
-          font-weight: 12px;
-          line-height: 19px;
+          font-weight: 0.75rem; // 12px
+          line-height: 1.188rem; //19px
           font-size: 1rem;
           color: $color-preto;
+     }
+}
+
+.header__container__nav {
+     width: auto;
+     height: 19px;
+
+     &--ul {
+          @include flex-row-center; 
+          gap: 2rem;
+
+          a {
+               text-decoration: none;
+               position: relative;
+               font-family: $font-family-Raleway;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 1rem;
+               line-height: 1.188rem;
+       
+               &::after {
+                 content: " ";
+                 width: 0%;
+                 height: 2px;
+                 background-color: $color-preto;
+       
+                 position: absolute;
+                 bottom: 0;
+                 left: 0;
+                 transition: 0.5s ease-in-out;
+               }
+       
+               &:hover::after {
+                 width: 100%;
+               }
+       
+               &:link {
+                 color: $color-preto;
+               }
+       
+               &:visited {
+                 color: #696969;
+               }
+             }
      }
 }
 
 .header__container__contact {
-
-     display: flex;
-     flex-wrap: wrap;
-
-     &--name {
-          font-family: $font-family-Raleway;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1rem;
-          line-height: 12px;
-          color: $color-preto;
-          
-     }
+     display: none;
 }
-
-
