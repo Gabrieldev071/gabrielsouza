@@ -1,8 +1,6 @@
 
 .container__footer {
- 
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   gap: 1rem;
   font-family: $font-family-Raleway;
   color: $color-preto;
@@ -49,12 +47,4 @@
   }
 }
 
-/* .campo__etiqueta {
-  font-family: $font-family-Raleway;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 16px;
-  color: $color-cinza;
-}
- */
+

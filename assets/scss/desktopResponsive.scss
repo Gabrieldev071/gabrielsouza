@@ -149,19 +149,13 @@
   /* Contato */
 
   .container__contact {
-    &__block {
-      &__group {
-        &__text {
-          &--title {
-            font-family: $font-family-Raleway;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2rem;
+  
+          &__block__group__text--title{
+            font-size: 1.5rem;
             line-height: 2.375rem;
             color: $color-preto;
           }
-        }
+        
       }
-    }
-  }
+  
 }
