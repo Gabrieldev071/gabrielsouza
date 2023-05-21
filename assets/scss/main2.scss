@@ -111,7 +111,7 @@
   &__block {
     @include flex-column-start;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: auto;
     gap: 1rem;
 
@@ -159,6 +159,7 @@
 
   &__group {
     @include flex-row-center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2.5rem;
 
@@ -204,7 +205,6 @@
   @include flex-column-center;
 
   gap: 2rem;
-  width: auto;
   height: auto;
   background-color: $color-azul10;
 
@@ -219,9 +219,11 @@
   }
 
   &__block {
-    @include flex-row-center;
-    
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
     flex-wrap: wrap;
 
 
@@ -229,15 +231,15 @@
       @include flex-column-start;
       gap: 1rem;
       padding: 1% 0;
-      width: 368px;
+      width: 248px;
       height: auto;
      
  
       &--img {
         @include flex-row-center;
         justify-content: center;
-        width: 340px;
-        height: 250px;
+        width: 100%;
+        height: 200px;
         padding: 6%;
         
         background-color: $background_color-branco;
@@ -284,7 +286,6 @@
 .container__projects {
   @include flex-column-center;
   height: auto;
-  padding: 2rem;
   gap: 1rem;
   background-color: $background_color-cinza-claro;
 
@@ -300,10 +301,10 @@
   &__block {
     @include flex-row-center;
     justify-content: center;
-    
+    flex-wrap: wrap;
     height: auto;
-    width: 73vw;
-    gap: 6rem;
+    width: 100%;
+    gap: 4rem;
 
     &--img {
       width: 752px;
@@ -370,28 +371,24 @@
   }
 }
 
-/* Contato */
 
 /* Contato */
 
 .container__contact {
   @include flex-column-center;
   height: auto;
-  padding: 2rem;
   background-color: $color-azul10;
 
   &__block {
     @include flex-row-center;
     height: auto;
     gap: 2rem;
-    padding: 1rem;
+    
     
 
     img {
-      flex-basis: 1;
       width: 441px;
       height: 655px;
-      flex-shrink: 3;
     }
 
     &__group {
@@ -446,13 +443,11 @@
 
       &__forms {
         @include flex-column-start;
-        width: 70%;
-        height: auto;
-        gap: 2rem;
+        gap: 1rem;
 
         .formsCampo {
           height: 70px;
-          width: 656px;
+          width: 100%;
     
           input {
             font-family: $font-family-Raleway;
@@ -475,7 +470,7 @@
         }
 
         .formsCampoArea{
-          width: 656px;
+          width: 100%;
           
 
           textarea {

@@ -1,8 +1,141 @@
-@media screen and (max-width: 1440px) {
- 
-/*     body {
-        width: 100vw;
-        height: 100vh;
-        padding: 0px;
-      } */
+@media screen and (max-width: 1100px) {
+  .container__profile {
+    @include flex-row-center;
+    height: auto;
+
+    background-color: #e5e5e5;
+
+    &__image {
+      &--img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &__content {
+      gap: 1rem;
+
+      &--title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      &--paragraph {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+
+      &--links {
+        height: auto;
+        gap: 1rem;
+
+        a {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .container__aboutme {
+    &__block {
+      &--title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      &--paragraph {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+    }
+  }
+
+  /* SKILSS */
+
+  .container__skills {
+    &--title {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    &__group {
+      align-items: center;
+      gap: 1.5rem;
+  
+
+      &__block {
+        width: 150px;
+        height: 130px;
+
+        &--text {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+  /* Academic education */
+
+  .container__training {
+    &--title {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    &__block {
+      &__group {
+        h6 {
+          font-size: 1.4rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  /* Professional Experience */
+  .container__projects {
+    &--title {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    &__block {
+      gap: 2rem;
+      padding: 5% 0%;
+      justify-content: space-around;
+
+      &--img { 
+          width: 752px;
+          height: 225px;
+      }
+
+      &__content {
+        &__info {
+          &--title {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* Contato */
+
+  .container__contact {
+    &__block {
+      &__group {
+        &__text {
+          &--title {
+            font-family: $font-family-Raleway;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.375rem;
+            color: $color-preto;
+          }
+        }
+      }
+    }
+  }
 }
