@@ -1,9 +1,4 @@
-@media screen and (max-width: 370px) {
-  .header__container {
-    @include flex-row-center;
-    height: auto;
-    padding: 1rem 1rem;
-  }
+@media screen and (max-width: 600px) {
 
   .header__container__name {
 
@@ -14,17 +9,10 @@
   }
 
   .header__container__contact {
-    display: block;
-
     a {
-      text-decoration: none;
-      font-family: $font-family-Raleway;
-      font-style: normal;
-      font-weight: 700;
       font-weight: 12px;
       line-height: 1.188rem;
       font-size: 1rem;
-      color: $color-preto;
     }
   }
 
@@ -62,7 +50,7 @@
 
       &--paragraph {
         font-size: 0.875rem;
-        line-height: 1rem;
+        line-height: 1.1rem
       }
 
       &--links {
@@ -96,7 +84,7 @@
 
       &--paragraph {
         font-size: 0.875rem;
-        line-height: 1rem;
+        line-height: 1.1rem
       }
     }
   }
@@ -141,7 +129,7 @@
 
         &--img {
           width: 100%;
-          height: 115px;
+          height: 150px;
 
         }
       }
@@ -153,7 +141,7 @@
       }
       &--paragraph {
         font-size: 0.875rem;
-        line-height: 1rem;
+        line-height: 1.1rem
       }
     }
   }
@@ -194,7 +182,7 @@
 
           &--paragraph {
             font-size: 0.875rem;
-            line-height: 1rem;
+            line-height: 1.1rem
       
           }
 
