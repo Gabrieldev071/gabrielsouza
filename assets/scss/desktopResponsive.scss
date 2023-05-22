@@ -2,7 +2,7 @@
 
   .header__container {
     @include flex-row-center;
-    height: auto;
+    height: 5rem;
     
   }
 
@@ -18,9 +18,8 @@
       font-family: $font-family-Raleway;
       font-style: normal;
       font-weight: 700;
-      font-weight: 12px;
-      line-height: 1.188rem;
       font-size: 1.5rem;
+      line-height: 1.188rem;
       color: $color-preto;
     }
 }
@@ -121,13 +120,14 @@
   /* Professional Experience */
   .container__projects {
     &--title {
+      padding-top: 3%;
       font-size: 1.5rem;
       line-height: 1.5rem;
     }
 
     &__block {
       gap: 2rem;
-      padding: 5% 0%;
+      padding: 2% 0%;
       justify-content: space-around;
 
       &--img { 

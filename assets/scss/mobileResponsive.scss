@@ -13,8 +13,10 @@
 
   .header__container__name {
 
+   
+
     &--title {
-      padding: 1rem;
+      
       line-height: 1.188rem;
       font-size: 1rem;
     }
@@ -22,9 +24,10 @@
 
   .header__container__contact {
     a {
-      font-weight: 12px;
+      font-weight: 700;
       line-height: 1.188rem;
       font-size: 1rem;
+      color: $color-preto;
     }
   }
 
@@ -86,7 +89,8 @@
   /* Sobre mim */
 
   .container__aboutme {
-    gap: 0.625rem;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
 
     &__block {
       gap: 0;
@@ -108,7 +112,7 @@
 
   .container__skills {
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 8%;
 
     &--title {
       height: 1.625rem;
@@ -117,6 +121,7 @@
     }
 
     &__group {
+      justify-content: center;
       gap: 1rem;
       &__block {
         &--text {

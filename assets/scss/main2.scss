@@ -142,9 +142,11 @@
 
 .container__skills {
   @include flex-column-center;
+ 
   flex-wrap: wrap;
   gap: 2.5rem;
   background-color: $background_color-cinza-claro;
+  padding-bottom: 3.5%;
 
   &--title {
     height: 26px;
@@ -159,7 +161,7 @@
 
   &__group {
     @include flex-row-center;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 2.5rem;
 
@@ -325,7 +327,7 @@
       @include flex-column-start;
       padding: 0px;
       gap: 0.5rem;
-      width: 348px;
+  
       height: 112px;
 
 
@@ -388,7 +390,7 @@
     
 
     img {
-      width: 441px;
+      width: 400px;
       height: 655px;
     }
 
