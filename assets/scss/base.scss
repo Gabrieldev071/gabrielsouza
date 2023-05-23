@@ -141,22 +141,17 @@ $font-family-Raleway: "Raleway", sans-serif;
   padding-bottom: 2%;
 }
 
-/* Text Labels */
+/* Erros Forms */
 
-/* .campo__etiqueta {
+.input--erro {
+  display: none;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 2px solid #e63636;
+  border-radius: 4px;
   font-family: $font-family-Raleway;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-cinza;
-} */
-
-/*  body {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    width: 100vw;
-    height: 100vh; 
-
-}  */
+  text-align: center;
+  color: red;
+  transition: all 0.5s ease-in-out;
+}
