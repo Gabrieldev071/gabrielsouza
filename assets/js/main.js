@@ -80,3 +80,4 @@ form.addEventListener("submit", (event) => {
   // Impede o envio do formulário
   event.preventDefault(); 
 });
+
