@@ -1,24 +1,36 @@
-# Sobre o portfólio:
 
-<p> Um website do meu portfólio pessoal onde contem informações sobre mim, minhas experiências, formações, cursos e habilidades. O projeto foi desenvolvido durante a formação Front-end do Programa One - Oracle Next Education, onde recebemos um design base no Figma e cada aluno teria a opção para adaptá-lo ou não. Nesse caso, decidi seguir o design fornecido o mais fielmente possível, já que essa é uma das tarefas diárias de um dev Front-End.</p>
+<p align="center">
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-ferramentas">Tecnologias & Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#elementosprincipais">Tópicos Abordados</a>
+</p>
 
-## Apresentação do projeto:
-   
-<video src="./assets/img/portifolio.mp4" controls>
-  Seu navegador não suporta a tag de vídeo.
-</video alt="video de apresentação do portifólio" >
+<h2>Sobre o portfólio:</h2>
+
+<p> Um website do meu portfólio pessoal onde contem informações sobre mim, minhas experiências, formações, cursos e habilidades. O projeto foi desenvolvido durante a formação Front-end do Programa One - Oracle Next Education, onde recebemos um design base para seguirmos pelo Figma e cada aluno teria a opção para adaptá-lo ou não. Nesse caso, decidi seguir o design fornecido o mais fielmente possível, já que essa é uma das tarefas diárias de um dev Front-End.</p>
+
+<h2 id="projeto">Apresentação do projeto:</h2> 
+
+<video autoplay loop muted alt="video de apresentação do portifólio">
+    <source src="./assets/img/portifolio.mp4" type="video/mp4" />
+</video controls>
 
     - Responsivo para tablet e mobile 🔸
 
-## Sobre o desenvolvimento do projeto:
+<h2>Sobre o desenvolvimento do projeto:</h2>
 
 <p>Durante o desenvolvimento pude por em prática e aprimorar minhas habilidades utilizando <strong>HTML5 e suas tags semânticas,</strong> <strong>CSS3</strong> juntamente com um <strong>pré-processador SASS e o padrão BEM nas linhas de código</strong> e também <strong>JavaScript</strong>.</p>
 
-## Deploy:
+<h2>💻 Deploy:</h2>
 
-Link: [Portifólio](https://gabrieldev071.github.io/portifolio/)
+- Visite o projeto online: [Portifólio](https://gabrieldev071.github.io/portifolio/)
 
-## Elementos principais da página:
+<h2 id="layout">🔖 Layout:</h2> 
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio?type=design&node-id=85-295). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+<h2 id="elementosprincipais">Elementos principais da página:</h2>
 
 ```
 [1] Uma introdutória onde me apresento e falo sobre minhas paixões
@@ -31,7 +43,7 @@ Link: [Portifólio](https://gabrieldev071.github.io/portifolio/)
 
 <p>Além disso, foi proposto um desafio nesse projeto onde precisávamos validar os campos do formulário de contato, validando se há espaços vazios ou se estavam no limite de caracteres definidos, e toda lógica foi implementada com JavaScript. Ademais, também foi feita validações pelo HTML utilizando algumas propriedades do próprio HTML como "required" e o uso do "pattern" para criar uma RegEx.</p>
 
-## Tecnologias & Ferramentas:
+<h2 id="tecnologias-ferramentas">Tecnologias & Ferramentas:</h2>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -41,9 +53,9 @@ Link: [Portifólio](https://gabrieldev071.github.io/portifolio/)
 ![FIGMA](https://img.shields.io/badge/figma-482ff7.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![GITHUB](https://img.shields.io/badge/github-18212d.svg?style=for-the-badge&logo=github&logoColor=white)
 
-### Tópicos abordados durante projeto:
+<h3>Tópicos abordados durante projeto:</h3>
 
-    #### JavaScript:
+- JavaScript:
 
         - Utilização de array de objetos.
         - Capturar o target do elemento html que está sendo clicado.
@@ -55,14 +67,14 @@ Link: [Portifólio](https://gabrieldev071.github.io/portifolio/)
         - Utilização do metodo forEach() to scroll to section.
         - Manipulação string de acordo com input do usuário.
 
-    #### HTML5
+- HTML5:
 
         - Tags como main, header, section, div, textarea, span, footer, nav, ul button, img, a,  h1, h2, p.
         - Adicionar mais de um nome de classe a um elemento html.
         - Adicionar link de fonte padrão a ser utilizada na aplicação na seção head do index.html.
         - adicionar link de estilos a ser utilizado na aplicação na seção head index.html.
 
-    #### CSS3 e SASS
+- CSS3 e SASS:
 
         - Variáveis no SASS.
         - Uso de @mixin and @include e reaproveitamenteo do código.
@@ -78,11 +90,11 @@ Link: [Portifólio](https://gabrieldev071.github.io/portifolio/)
         - Utilização pseudo-elementos e pseudo-classes.
         
 
-### Badge de conclusão do desafio:
+<h3> Badge de conclusão do desafio: </h3> 
 
 <img src="assets/img/badge_challenge_portfolio.png">
 
-### Minhas redes e contato:
+<h3 id="contato">Minhas redes e contato: </h3> 
 
 <a href="https://www.linkedin.com/in/gabriel-albuquerque-souza-desenvolvedor/" target="_blank" >![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 <a href="mailto:contato_gabriel_albuquerque@hotmail.com" target="_blank" >![GMAIL](https://img.shields.io/badge/GMAIL-D14836.svg?style=for-the-badge&logo=gmail&logoColor=white)</a>

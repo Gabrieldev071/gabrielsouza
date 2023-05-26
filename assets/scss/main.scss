@@ -288,7 +288,7 @@
 .container__projects {
   @include flex-column-center;
   height: auto;
-  gap: 1rem;
+  gap: 4rem;
   background-color: $background_color-cinza-claro;
 
   &--title {
@@ -300,35 +300,43 @@
     color: $color-preto;
   }
 
+  &__block:nth-child(2n + 1) {
+    flex-direction: row-reverse
+  }
+
   &__block {
     @include flex-row-center;
     justify-content: center;
-    flex-wrap: wrap;
     height: auto;
-    width: 100%;
     gap: 4rem;
+    
 
     &--img {
+      width: 70%;
+    }
+    &--img {
+      width: 70%;
+    }
+
+    img {
       width: 752px;
       height: 406px;
-      background: url(../img/demo-decodificador.png);
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.90));
+    /*   background: url(../img/demo-decodificador.png);
       filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.40));
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-clip: content-box;
+      background-clip: content-box; */
       border-radius: 0px;
       padding: 0px;
       gap: 1rem;
-    }
-    
-
+    } 
     &__content {
       @include flex-column-start;
       padding: 0px;
-      gap: 0.5rem;
+      gap: 1rem;
   
-      height: 112px;
 
 
       &__info {
@@ -336,7 +344,7 @@
         width: 100%;
         height: auto;
         padding: 0px;
-        gap: 0.5rem;
+        gap: 1rem;
         ;
 
         &--title {
