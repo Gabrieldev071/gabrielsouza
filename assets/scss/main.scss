@@ -131,7 +131,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 1.4rem;
-      line-height: 1.825rem;;
+      line-height: 1.825rem;
 
       color: $color-preto;
     }
@@ -142,7 +142,7 @@
 
 .container__skills {
   @include flex-column-center;
- 
+
   flex-wrap: wrap;
   gap: 2.5rem;
   background-color: $background_color-cinza-claro;
@@ -228,22 +228,25 @@
     gap: 2rem;
     flex-wrap: wrap;
 
-
     &__group {
       @include flex-column-start;
       gap: 1rem;
       padding: 1% 0;
       width: 290px;
       height: auto;
-     
- 
+
+      &:hover {
+        transform: scale(1.07);
+        transition: 0.5s;
+      }
+
       &--img {
         @include flex-row-center;
         justify-content: center;
         width: 100%;
         height: 200px;
         padding: 6%;
-        
+
         background-color: $background_color-branco;
 
         img {
@@ -260,7 +263,7 @@
         line-height: 1.438rem;
         color: $color-preto;
       }
-  
+
       p {
         font-family: $font-family-Raleway;
         font-style: normal;
@@ -272,6 +275,27 @@
 
         a {
           text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: $color-preto;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          &:link {
+            color: $color-preto;
+          }
 
           &:visited {
             color: #696969;
@@ -279,7 +303,6 @@
         }
       }
     }
-
   }
 }
 
@@ -301,7 +324,7 @@
   }
 
   &__block:nth-child(2n + 1) {
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
   }
 
   &__block {
@@ -309,20 +332,17 @@
     justify-content: center;
     height: auto;
     gap: 4rem;
-    
 
     &--img {
       width: 70%;
     }
-    &--img {
-      width: 70%;
-    }
+
 
     img {
       width: 752px;
       height: 406px;
-      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.90));
-    /*   background: url(../img/demo-decodificador.png);
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.9));
+      /*   background: url(../img/demo-decodificador.png);
       filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.40));
       background-position: center;
       background-repeat: no-repeat;
@@ -331,13 +351,11 @@
       border-radius: 0px;
       padding: 0px;
       gap: 1rem;
-    } 
+    }
     &__content {
       @include flex-column-start;
       padding: 0px;
       gap: 1rem;
-  
-
 
       &__info {
         @include flex-column-start;
@@ -345,8 +363,6 @@
         height: auto;
         padding: 0px;
         gap: 1rem;
-        ;
-
         &--title {
           font-family: $font-family-Raleway;
           font-style: normal;
@@ -382,7 +398,6 @@
   }
 }
 
-
 /* Contato */
 
 .container__contact {
@@ -394,8 +409,6 @@
     @include flex-row-center;
     height: auto;
     gap: 2rem;
-    
-    
 
     img {
       width: 400px;
@@ -403,15 +416,12 @@
     }
 
     &__group {
-
-      
       &__text {
         @include flex-column-start;
         flex-wrap: wrap;
         padding: 0px;
         width: 100%;
         gap: 1rem;
-        
 
         &--title {
           font-family: $font-family-Raleway;
@@ -437,18 +447,18 @@
           font-weight: 400;
           font-size: 0.9rem;
           line-height: 1rem;
-          
-        a {
-          text-decoration: underline;
-  
-          &:link {
-            color: $color-preto;
+
+          a {
+            text-decoration: underline;
+
+            &:link {
+              color: $color-preto;
+            }
+
+            &:visited {
+              color: #696969;
+            }
           }
-  
-          &:visited {
-            color: #696969;
-          }
-        }
         }
       }
 
@@ -459,7 +469,7 @@
         .formsCampo {
           height: auto;
           width: 100%;
-    
+
           input {
             font-family: $font-family-Raleway;
             font-style: normal;
@@ -474,15 +484,14 @@
             padding: 0.5rem;
             border-radius: 4px;
           }
-          
+
           input:focus {
             border-bottom: 2px solid $color-azul-escuro;
           }
         }
 
-        .formsCampoArea{
+        .formsCampoArea {
           width: 100%;
-          
 
           textarea {
             font-family: $font-family-Raleway;
@@ -503,9 +512,7 @@
               border-bottom: 2px solid $color-azul-escuro;
             }
           }
-
         }
-
 
         button {
           width: 151px;
@@ -516,7 +523,3 @@
     }
   }
 }
-
-
-
-
