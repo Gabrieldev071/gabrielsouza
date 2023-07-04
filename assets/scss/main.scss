@@ -335,12 +335,13 @@
 
     &--img {
       width: 70%;
+      text-align: center;
     }
 
 
     img {
-      width: 752px;
-      height: 406px;
+      width: 570px;
+      height: 400px;
       filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.9));
       /*   background: url(../img/demo-decodificador.png);
       filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.40));
