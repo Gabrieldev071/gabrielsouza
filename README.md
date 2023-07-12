@@ -33,7 +33,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 <h2 id="elementosprincipais">Elementos principais da página:</h2>
 
 ```
-[1] Uma introdutória onde me apresento e falo sobre minhas paixões
+[1] Uma sessão introdutória onde me apresento e falo sobre minhas paixões
 [2] Conto um pouco sobre min
 [3] Habilidades/skills e meus hobbies
 [4] Formação acadêmica
@@ -70,6 +70,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 - HTML5:
 
         - Tags como main, header, section, div, textarea, span, footer, nav, ul button, img, a,  h1, h2, p.
+        - Uso padrão de nomeclatura de classes no HTML com metodologia (BEM)
         - Adicionar mais de um nome de classe a um elemento html.
         - Adicionar link de fonte padrão a ser utilizada na aplicação na seção head do index.html.
         - adicionar link de estilos a ser utilizado na aplicação na seção head index.html.
